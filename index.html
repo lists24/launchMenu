@@ -57,6 +57,10 @@
               zonecode : data.zonecode,
               buildingname : data.buildingName
           };
+          
+          console.log("onReceivedPostMessage "+data);
+           console.log("onReceivedPostMessage "+data.buildingName);
+          
           window.postMessageToiOS(postData);
         },
         width : '100%',
