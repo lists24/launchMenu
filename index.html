@@ -33,11 +33,11 @@
     var element_layer = document.getElementById('layer');
     function execDaumPostcode() {
       new daum.Postcode({
+        hideMapBtn: true,
+        hideEngBtn: true,
         oncomplete: function(data) {
           var jibunAddress = ""
 
-          
-          
           var addressData = ""
           if (data.userSelectedType == "R")
           {
